@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="pw-container">
+
+        <div class="pw-logo">
+            <h1>Gerador de senhas</h1>
+            <img src="assets/img/logo.png" alt="logo">
+        </div>
+
+        <div class="pw-header">
+            <label>Senha gerada:</label>
+            <div id="copy" class="result">
+                <span id="password">******************</span>
+            </div>
+            <div class="clicktocopy">
+                <span id="textcopy">Clique na senha para copiar. 👆</span>
+            </div>
+        </div>
+
+        <div class="pw-body">
+            <label>Tamanho:<span id="range_value">12</span></label>
+            <div class="control">
+                <span>6</span>
+                <input type="range" min="6" max="18" value="12" name="range" id="range">
+                <span>18</span>
+            </div>
+        </div>
+
+        <button onclick="generatePassword()" id="generate">Gerar senha</button>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
