@@ -1,7 +1,7 @@
 /**
  * CONTANTES DOM E CONST CARACTERES 
  */
-const length = document.getElementById('range');
+const range = document.getElementById('range');
 const result = document.getElementById('password');
 const copy = document.getElementById('copy');
 const copyarea = document.querySelector('.clicktocopy');
@@ -18,7 +18,7 @@ const chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
 const generatePassword = () => {
     let password = '';
 
-    for (let i = 0; i < length.value; i++) {
+    for (let i = 0; i < range.value; i++) {
         password += chars[Math.floor(Math.random() * chars.length)];
     }
 
@@ -48,3 +48,10 @@ copy.onclick = () => {
     copySuccess(true);
 
 }
+
+/**
+ * ATUALIZAR O TAMANHO ATUAL
+ */
+range.addEventListener('change', () => {
+    document.getElementById('range_value').innerText = range.value;
+} )

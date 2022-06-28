@@ -14,10 +14,12 @@ body {
 }
 
 .pw-container {
+    width: 370px;
     background-color: #0a0e30;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.428);
+    margin: 10px;
 }
 
 .pw-logo {
@@ -28,8 +30,12 @@ body {
     line-height: 0;
 }
 
+.pw-logo h1 {
+    text-transform: uppercase;
+}
+
 .pw-logo img {
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 
@@ -91,6 +97,7 @@ label {
 #range_value {
     font-weight: bold;
     color: white;
+    font-size: 12px;
 }
 
 #range {
